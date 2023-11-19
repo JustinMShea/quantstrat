@@ -1,11 +1,11 @@
 Package: quantstrat
 Type: Package
 Title: Quantitative Strategy Model Framework
-Version: 0.16.4
-Date: 2019-09-14 $Date$
-Author: Peter Carl, Brian G. Peterson, Joshua Ulrich, Jasen Mackie, Jan Humme
+Version: 0.25
+Date: 2023-01-24 $Date$
+Author: Brian G. Peterson, Joshua Ulrich, Jasen Mackie, Jan Humme, Peter Carl
 Depends:
-    R(>= 3.2),
+    R(>= 4.0),
     quantmod,
     xts(>= 0.10),
     blotter(>= 0.14.0),
@@ -24,7 +24,6 @@ Suggests:
     testthat,
     rCharts,
     gamlss,
-    gamlss.util,
     reshape2,
     beanplot,
     knitr,
@@ -32,7 +31,10 @@ Suggests:
     pander,
     xtable,
     covr,
-    usethis
+    usethis,
+    AlgDesign
+Remotes:
+    github::braverock/blotter
 Maintainer: Brian G. Peterson <brian@braverock.com>
 Description: Specify, build, and back-test quantitative
     financial trading and portfolio strategies.
@@ -43,5 +45,5 @@ License: GPL-3
 Copyright: (c) 2009-2019
 ByteCompile: TRUE
 Encoding: UTF-8
-RoxygenNote: 6.1.1.9000
+RoxygenNote: 7.1.2
 VignetteBuilder: knitr
